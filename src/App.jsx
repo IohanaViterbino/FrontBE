@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
 
-      const response = await fetch(`${import.meta.env.VITE_URL}?page=${page}`)
+      const response = await fetch(`${import.meta.env.VITE_URL}`)
       const data = await response.json()
       setPaginatedData(data)
     }
